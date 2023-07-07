@@ -122,6 +122,47 @@ background-color: rgba(53, 232, 175, 0.783);
     padding-top: 0px;
     color: aliceblue;
 }
+.iconstyle{
+    display: flex;
+    justify-content: center;
+}
+.iconstyle a{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin: auto;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    margin: 0 10px 0 5px;
+    position: relative;
+    overflow: hidden;
+    /* padding-top: 5px; */
+}
+.iconstyle a .fa-brands{
+ font-size: 30px;
+ line-height: 50px;
+ position: relative;
+ z-index: 10;
+ transition: 0.4s;
+}
+.iconstyle a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-40deg,#1ced1c, #8f17ff);
+    position: absolute;
+    transition: 0.4sec;
+}
+.iconstyle a:hover::after{
+    top: 0;
+}
+.iconstyle a:hover .fa-brands{
+    color: azure;
+}
 @media(max-width: 414px){
     .rows{
         padding: 0px;
