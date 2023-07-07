@@ -163,7 +163,7 @@ background-color: rgba(53, 232, 175, 0.783);
 .iconstyle a:hover .fa-brands{
     color: azure;
 }
-@media(max-width: 414px){
+@media only screen and(min-width:200px)and (max-width: 567px){
     .rows{
         padding: 0px;
         display:flex ;
@@ -172,5 +172,9 @@ background-color: rgba(53, 232, 175, 0.783);
     .iconstyle{
         display:flex ;
         flex-direction: row;
+    }
+    .bios{
+        width: 100%;
+        height: 100%;
     }
 }
